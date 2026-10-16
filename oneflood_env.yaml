@@ -1,0 +1,14 @@
+name: oneflood 
+
+channels: 
+  - conda-forge 
+
+dependencies:
+  - python=3.11
+  - pip 
+  - boto3
+  - timezonefinder
+  - requests >= 2.31
+  - earthaccess >=0.9
+  - numpy >= 1.24
+  - boto3 >= 1.43
