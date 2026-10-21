@@ -7,7 +7,7 @@ OneFlood aims to facilitate the access to satellite-dervied surface water extent
 
 ## Step 1: Download the Source Code
 
-```
+```bash
 git clone https://github.com/mickymags/oneflood.git
 ```
 
@@ -18,7 +18,7 @@ We have provided multiple ways to install OneFlood to ensure interoperability be
 **Step 2 Option 1: YAML file**
 
 Run the below code after running the code in Step 1 
-```
+```bash
 cd oneflood
 conda install -f oneflood_env.yaml
 conda activate oneflood
@@ -29,7 +29,7 @@ For a faster download, consider using mamba rather than conda.
 **Step 2 Option 2: Install using Pixi (IN PROGRESS)**
 Pixi allows for a reproducible environment that shares interoperability between operating systems. This package was developed on a Linux machine so this option is recommended if you are on Mac or Windows. 
 
-```
+```bash
 pixi install 
 pixi run oneflood --help
 ```
@@ -45,7 +45,9 @@ OneFlood supports the command-line usage, supporting several functions
 
 **Step 3a: product_availability function
 
-```oneflood product_availability --aoi xmin ymin xmax ymax --date_of_int 2026-10-15```
+```bash
+oneflood product_availability --aoi xmin ymin xmax ymax --date_of_int 2026-10-15
+```
 
 This method will provide you with the overpass dates and times of flood products for a region of interest. 
 
