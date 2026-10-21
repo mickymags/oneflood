@@ -1,15 +1,17 @@
 # Oneflood
 OneFlood aims to facilitate the access to satellite-dervied surface water extent products, as well as develop a unique synthesis flood product (OneFlood) that combines products depending on their availability and cloud cover.
 
+**Please note this package is in the early development stages and does not yet support full command line functionality**
+
 # Installation 
 
-##Step 1: Download the Source Code
+## Step 1: Download the Source Code
 
 ```
 git clone https://github.com/mickymags/oneflood.git
 ```
 
-##Step 2: Installation
+## Step 2: Installation
 
 We have provided multiple ways to install OneFlood to ensure interoperability between operating systems 
 
@@ -19,11 +21,29 @@ Run the below code after running the code in Step 1
 ```
 cd oneflood
 conda install -f oneflood_env.yaml
+conda activate oneflood
+```
+This may take some time (and appear to be stalling on the Solving environment step). 
+For a faster download, consider using mamba rather than conda. 
+
+**Step 2 Option 2: Install using Pixi**
+Pixi allows for a reproducible environment that shares interoperability between operating systems. This package was developed on a Linux machine so this option is recommended if you are on Mac or Windows. 
+
+```
+pixi install 
+pixi run oneflood --help
 ```
 
-**Step 2 Option 3: Use Pixi**
+**Step 2 Option 3: Install Using PyPI (IN PROGRESS)** 
 
-Step 2 Option 3: Python Package (IN PROGRESS)
+By the launch of Version 1, we hope to make oneflood available via the Python Package Index
+
+
+## Step 3: Usage 
+
+OneFlood supports the command-line usage, supporting several functions 
+
+**Step 3a: 
 
 
 
