@@ -1,0 +1,9 @@
+name: oneflood 
+
+channels: [conda-forge] 
+
+dependencies:
+  - python>=3.10
+  - pip 
+  - pip: 
+    - git+https://github.com/mickymags/oneflood.git
