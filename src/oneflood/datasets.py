@@ -4,7 +4,7 @@ import boto3
 from botocore.client import Config 
 from botocore import UNSIGNED
 
-from oneflood_utils import (
+from .oneflood_utils import (
     get_bbox_timezone, utc_2_local, 
     local_2_utc, time_bufferer,
     check_4_netrc, vfm_tiler,
