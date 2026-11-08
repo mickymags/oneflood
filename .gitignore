@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.DS_Store
+
+# Secrets and credentials
+.env
+.netrc
+*.pem
+*.key
+
+# Tools 
+.pixi/
+.pytest_cache/
