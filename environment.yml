@@ -1,0 +1,12 @@
+name: oneflood
+
+channels: [conda-forge]
+
+dependencies:
+  - python>=3.11,<3.14
+  - pip
+  - geopandas>=1.1
+  - numpy
+  - boto3
+  - pip:
+      - git+https://github.com/mickymags/oneflood.git
