@@ -105,6 +105,8 @@ def check_4_dswxs1(
     ##############################################################
     #    Step 1: Obtain start times and end times                #
     ##############################################################
+    # Check for netrc file 
+    check_4_netrc() 
 
     ### Construct a datetime string in ISO format 
     input_iso_datetime = date_of_int + 'T' + time_of_int
@@ -133,9 +135,6 @@ def check_4_dswxs1(
     ######################################################
     #     Step 2: Check for DSWx-S1 files                # 
     ######################################################
-
-    # Check for netrc file 
-    check_4_netrc() 
 
     # Download files with earthaccess 
     dswxs1_results = earthaccess.search_data(
@@ -437,6 +436,10 @@ def check_4_mcdwd(
 
     # Extract MODIS tile identifiers 
     tile1 = modis_tiler(xmin, ymin)
+
+    modis_string = 'placeholder string'
+
+    return modis_string
 def dataset_info(
         date_of_int : str, 
         xmin : float, 

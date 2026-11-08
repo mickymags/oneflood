@@ -245,7 +245,8 @@ def check_4_netrc() -> None:
         pass
         #print(f"Found existing netrc file: {netrc_path}")
     else:
-        raise FileNotFoundError("No .netrc file exists! Please setup earthdata netrc as shown in instructions")
+        raise FileNotFoundError("No .netrc file exists! Please setup earthdata \
+                                netrc file by running oneflood setup-netrc -h")
     
 
 def setup_earthdata_netrc(earthdata_username, earthdata_password):
